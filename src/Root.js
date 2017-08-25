@@ -1,13 +1,9 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router'
-import { Home } from '../../Containers'
+import React from 'react';
 
-export default class Root extends Component {
+export default class Root extends React.Component {
   render() {
     return (
-      <div>
-        {this.props.children}
-      </div>
-    )
+      <div>{this.props.children}</div>
+    );
   }
 }
