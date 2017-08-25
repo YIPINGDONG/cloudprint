@@ -32,9 +32,11 @@ class App extends Component {
     });
   }
   render() {
-     const videoSearch = _.debounce(term => {
+    
+  const videoSearch = _.debounce(term => {
       this.videoSearch(term);
     }, 300);
+
     return (
       <div className="App">
         <div className="App-header">
@@ -44,10 +46,10 @@ class App extends Component {
         </div>
         
          <button>
-        <Link to="post/1">search and watch video</Link><hr/></button> 
+        <Link to="post/1">use google login</Link><hr/></button> 
         <button><Link to="query">How to use it</Link><hr/></button>
        <SearchBar onSearchTermChange={videoSearch} />
-       search result: <VideoDetail video={this.state.selectedVideo} />
+        <VideoDetail video={this.state.selectedVideo} />
         <VideoList
           onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
           videos={this.state.videos}/>
