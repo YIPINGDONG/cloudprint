@@ -5,6 +5,8 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-fastclick": "^3.0.2",
+    "react-tap-event-plugin": "^2.0.1",
     "youtube-api-search": "0.0.5"
   },
   "devDependencies": {
